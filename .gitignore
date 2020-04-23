@@ -2,3 +2,4 @@ a.out
 .vscode
 *.cpp
 !template/template.cpp
+*.txt
