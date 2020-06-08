@@ -1,18 +1,4 @@
-// #include<bits/stdc++.h>
-#include<cstdio>
-#include<iostream>
-#include<vector>
-#include<unordered_map>
-#include<map>
-#include<queue>
-#include<deque>
-#include<set>
-#include<unordered_set>
-#include<algorithm>
-#include<string>
-#include<climits>
-#include<iomanip>
-#include<utility>
+#include<bits/stdc++.h>
 
 #define ll long long
 #define pb push_back
@@ -21,7 +7,10 @@
 #define umap unordered_map
 #define uset unordered_set
 #define mod 1000000009
+#define mod2 998244353
 #define fo(i,n) for(ll i=0; i<(n); i++)
+#define rep(i,s,e,inc) for(ll i=(s); i<(e); i+=inc)
+#define repb(i,s,e,inc) for(ll i=(s); i>(e); i+=inc)
 
 using namespace std;
 using pll = pair<ll, ll>;
