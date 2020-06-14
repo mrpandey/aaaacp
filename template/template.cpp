@@ -6,7 +6,7 @@
 #define mp make_pair
 #define umap unordered_map
 #define uset unordered_set
-#define mod 1000000009
+#define mod1 1000000009
 #define mod2 998244353
 #define fo(i,n) for(ll i=0; i<(n); i++)
 #define rep(i,s,e,inc) for(ll i=(s); i<(e); i+=inc)
@@ -14,6 +14,8 @@
 
 using namespace std;
 using pll = pair<ll, ll>;
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 // vector<ll> st, a;
 
