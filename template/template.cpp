@@ -6,6 +6,7 @@
 #define mp make_pair
 #define umap unordered_map
 #define uset unordered_set
+#define pq priority_queue
 #define mod1 1000000009
 #define mod2 998244353
 #define fo(i,n) for(ll i=0; i<(n); i++)
