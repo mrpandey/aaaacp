@@ -7,7 +7,7 @@
 #define umap unordered_map
 #define uset unordered_set
 #define pq priority_queue
-#define mod1 1000000009
+#define mod1 1000000007
 #define mod2 998244353
 #define fo(i,n) for(ll i=0; i<(n); i++)
 #define rep(i,s,e,inc) for(ll i=(s); i<(e); i+=inc)
