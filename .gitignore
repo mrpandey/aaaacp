@@ -3,3 +3,4 @@ a.out
 *.cpp
 !template/template.cpp
 *.txt
+core
