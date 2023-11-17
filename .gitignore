@@ -1,6 +1,8 @@
 a.out
 .vscode
 *.cpp
-!template/template.cpp
+*.go
+!cpp/template.cpp
+!go/template.go
 *.txt
 core

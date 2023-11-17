@@ -1,20 +1,45 @@
 #!/bin/bash
 
-rm *.cpp
+lang=$1
 
-cp template/template.cpp ./a.cpp
-cp template/template.cpp ./a1.cpp
-cp template/template.cpp ./b.cpp
-cp template/template.cpp ./b1.cpp
-cp template/template.cpp ./c.cpp
-cp template/template.cpp ./c1.cpp
-cp template/template.cpp ./d.cpp
-cp template/template.cpp ./d1.cpp
-cp template/template.cpp ./e.cpp
-cp template/template.cpp ./e1.cpp
-cp template/template.cpp ./f.cpp
-cp template/template.cpp ./f1.cpp
-cp template/template.cpp ./g.cpp
-cp template/template.cpp ./g1.cpp
+# check if lang is empty
+if [ -z "$lang" ]
+then
+    echo "Please enter a language"
+    exit 1
+fi
 
-g++ a.cpp
+# if lang is not cpp or go
+if [ "$lang" != "cpp" ] && [ "$lang" != "go" ]
+then
+    echo "Please enter a valid language: cpp or go"
+    exit 1
+fi
+
+# create array of strings
+dirs=("a" "a1" "b" "b1" "c" "c1" "d" "d1" "e" "e1" "f" "f1" "g" "g1")
+
+# if lang is go
+if [ "$lang" == "go" ]
+then
+    rm *.cpp
+    for dir in "${dirs[@]}"
+    do
+        rm -rf $dir/
+        mkdir $dir
+        cp go/template.go $dir/$dir.go
+    done
+fi
+
+
+# if lang is go
+if [ "$lang" == "cpp" ]
+then
+    rm *.cpp
+    for dir in "${dirs[@]}"
+    do
+        rm -rf $dir
+        cp cpp/template.cpp $dir.cpp
+    done
+    g++ a.cpp
+fi
